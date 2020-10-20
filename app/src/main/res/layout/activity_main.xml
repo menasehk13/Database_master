@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_background"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hotelname"
+        android:id="@+id/inputname"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uploadhotel"
+        android:id="@+id/upload_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Display Image"
+        android:id="@+id/show_image"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating"
+        android:layout_gravity="center"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/maps"/>
+</LinearLayout>
