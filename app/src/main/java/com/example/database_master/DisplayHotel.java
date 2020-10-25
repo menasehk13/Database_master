@@ -1,5 +1,7 @@
 package com.example.database_master;
 
+import android.widget.RatingBar;
+
 public class DisplayHotel {
     String name,imagepath;
     float rating;

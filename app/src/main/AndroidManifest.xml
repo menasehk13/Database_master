@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".RoomTypeinput"></activity>
-        <activity android:name=".Choose" />
         <activity android:name=".DisplayImage" />
         <activity android:name=".MainActivity">
             <intent-filter>
