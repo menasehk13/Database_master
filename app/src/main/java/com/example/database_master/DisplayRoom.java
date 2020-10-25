@@ -1,15 +1,15 @@
 package com.example.database_master;
 
 public class DisplayRoom {
-    String type,imagepath;
+    String type, imagepath;
+    float number;int price;
 
-    public DisplayRoom(String type, String imagepath, int number) {
+    public DisplayRoom(String type, String imagepath, float number, int price) {
         this.type = type;
         this.imagepath = imagepath;
         this.number = number;
+        this.price = price;
     }
-
-    int number;
 
     public String getType() {
         return type;
@@ -27,11 +27,19 @@ public class DisplayRoom {
         this.imagepath = imagepath;
     }
 
-    public int getNumber() {
+    public float getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(float number) {
         this.number = number;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
